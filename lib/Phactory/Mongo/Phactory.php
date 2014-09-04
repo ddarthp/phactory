@@ -166,7 +166,7 @@ class Phactory {
      *
      * @param string $collection_name the singular name of the collection to associate with
      */
-    public function embedsOne($collection_name) {
+    public function embedsOne($collection_name) { 
         return new Association\EmbedsOne($collection_name);
     }
 
