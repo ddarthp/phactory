@@ -1,0 +1,20 @@
+{       
+    "name": "ddarthp/phactory",     
+    "type": "package",
+    "description": "phactory_mongo",
+    "keywords": ["phactory", "phactory_mongoDB"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ddarthp",
+            "email": "diegofpineda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-0": {"Phactory": "lib/"}
+    }
+}
