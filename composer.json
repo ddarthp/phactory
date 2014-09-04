@@ -1,20 +1,24 @@
-{       
-    "name": "ddarthp/phactory",     
-    "type": "package",
-    "description": "phactory_mongo",
-    "keywords": ["phactory", "phactory_mongoDB"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "ddarthp",
-            "email": "diegofpineda@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.2",
-        "ext-curl": "*"
-    },
-    "autoload": {
-        "psr-0": {"Phactory": "lib/"}
-    }
+{
+"name": "ddarthp/phactory", 
+"description": "A Database Factory for PHP Unit Tests",
+"keywords": ["testing","database","mysql","sqlite","mongodb"],
+"homepage": "http://phactory.org",
+"license": "MIT",
+"require": {
+"php": ">=5.3.0"
+},
+"require-dev": {
+"ext-pdo": "*",
+"ext-pdo_sqlite": "*",
+"ext-mongo": "*"
+},
+"suggest": {
+"ext-pdo": "Allows use of Phactory for testing against SQL databases",
+"ext-pdo_mysql": "Allows use of Phactory for testing against MySQL databases",
+"ext-pdo_sqlite": "Allows use of Phactory for testing against SQLite databases",
+"ext-mongo": "Allows use of Phactory for testing against MongoDB databases"
+},
+"autoload": {
+"psr-0": {"Phactory": "lib/"}
+}
 }
